@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Biselica</string>
+    <string name="BeforeTap">Выберите букву на клавиатуре.</string>
+    <string-array name="AfterTap">
+        <item>Буква \'%s\' была в слове!</item>
+        <item>Буквы \'%s\' не было в слове!</item>
+        <item>Буква \'%s\' уже была выбрана!</item>
+        <item>Буквы \'%s\' не было в слове! Вы проиграли!</item>
+        <item>Буква \'%s\' была в слове! Вы выиграли!</item>
+    </string-array>
+    <string name="Try">Попыток осталось: </string>
+    <string name="description">ОПИСАНИЕ ОЧЕНЬ ТРУДНО АААА\n\nНажмите Menu чтобы призвать клавиатуру.</string>
+    <string name="settings">Настройки</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="action_settings">Settings</string>
+    //SETTINGS
+    <string name="CheckUpdate">Проверять обновления автоматически</string>
+
+    <!-- Strings related to Settings -->
+    <string name="TrySet">Количество попыток</string>
+    <string name="listSet">Список слов</string>
+    <string name="listChoose">Добавить файл с списком слов.</string>
+    <!-- Strings related to Settings -->
+    <string-array name="listName">
+    <item>Default</item>
+</string-array>
+    <string-array name="listValue">
+        <item>words.txt</item>
+    </string-array>
+</resources>
