@@ -64,12 +64,16 @@ public class MainActivity extends AppCompatActivity {
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_MENU) {
             event.startTracking();
-            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
-            tv2.requestFocus();
+            keyboardUp(null);
             return true;
         }
         return super.onKeyDown(keyCode, event);
+    }
+
+    public void keyboardUp(View view) {
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
+        tv2.requestFocus();
     }
 
     private void prepareForGame() {

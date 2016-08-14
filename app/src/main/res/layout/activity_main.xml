@@ -9,72 +9,72 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.me.biselica.MainActivity">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="37dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:singleLine="false"
+        android:elegantTextHeight="false"
+        android:textSize="25sp"
+        android:textIsSelectable="true"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="38dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView4"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:background="@drawable/rounded"
         android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:weightSum="1">
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="52dp">
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/textView3" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="37dp"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="ВИС-Л-ЦА"
-                android:id="@+id/textView"
-                android:textAlignment="center"
-                android:singleLine="false"
-                android:elegantTextHeight="false"
-                android:textSize="25dp"
-                android:textIsSelectable="true"
-                android:textStyle="bold"
-                android:layout_weight="0.04"
-                android:layout_alignBottom="@+id/textView4"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:gravity="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/BeforeTap"
+        android:id="@+id/textView2"
+        android:textAlignment="center"
+        android:visibility="visible"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
 
-            <TextView
-                android:layout_width="40dp"
-                android:layout_height="38dp"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="1"
-                android:id="@+id/textView4"
-                android:textAlignment="center"
-                android:gravity="center_vertical"
-                android:background="@drawable/rounded"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_keyboard"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="keyboardUp"
+        android:clickable="true"
+        android:layout_alignParentEnd="true" />
 
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:id="@+id/textView3" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/restBtn"
+        android:id="@+id/button2"
+        android:clickable="false"
+        android:onClick="onClick"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/BeforeTap"
-            android:id="@+id/textView2"
-            android:textAlignment="center"
-            android:visibility="visible" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Сменить уровень"
-            android:id="@+id/button2"
-            android:clickable="false"
-            android:onClick="onClick" />
-
-
-    </LinearLayout>
 </RelativeLayout>

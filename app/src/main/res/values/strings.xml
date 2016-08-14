@@ -12,7 +12,7 @@
     <string name="description">ОПИСАНИЕ ОЧЕНЬ ТРУДНО АААА\n\nНажмите Menu чтобы призвать клавиатуру.</string>
     <string name="settings">Настройки</string>
     <string name="title_activity_settings">Settings</string>
-    <string name="action_settings">Settings</string>
+    <string name="restBtn">Сменить слово</string>
     //SETTINGS
     <string name="CheckUpdate">Проверять обновления автоматически</string>
 

@@ -40,7 +40,7 @@ public class SettingsActivity extends PreferenceActivity {
                 new Intent(getIntent()), 0);
         toolbar.setClickable(true);
         toolbar.setNavigationIcon(getResIdFromAttribute(this));
-        toolbar.setTitle(R.string.action_settings);
+        toolbar.setTitle(R.string.settings);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
 
             @Override
